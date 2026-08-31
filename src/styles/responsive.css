@@ -1,0 +1,14 @@
+@media (max-width: 340px) {
+  :root { --space-2xl: 5.5rem; }
+  .hero-envelope { width:min(80vw,300px) }.hero__scene { padding-top:calc(min(78vw,300px)*.3) }
+  .countdown__grid strong{font-size:1.5rem}.rsvp-envelope__letter{padding:1rem .8rem}
+}
+@media (max-height: 620px) {
+  .hero__eyebrow{margin-bottom:12px}.hero__scene{padding-top:68px}.hero-envelope{width:min(68vw,280px)}.hero__open{margin-top:16px}.scroll-cue{display:none}
+}
+@media (min-width: 700px) {
+  :root{--section-space-sm:4rem;--section-space-md:5.5rem;--section-space-lg:6.5rem}.hero-envelope{width:390px}.hero__scene{padding-top:130px}.photo-story__frame{height:78vh}.calendar{padding:2rem}.calendar__day{font-size:1rem}.rsvp-envelope__letter{padding:2rem 2.5rem}
+}
+@media (min-width: 1024px) {
+  .hero::before,.hero::after{width:45vw}.photo-story{width:min(86%,960px)}.photo-story--first .photo-story__frame{width:76%;margin-left:auto}.photo-story--second .photo-story__frame{width:78%;margin-right:auto}.photo-story__caption{right:7%;bottom:calc(var(--content-gap-md) + 2.5rem)}.rsvp-envelope{width:600px}
+}

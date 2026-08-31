@@ -1,0 +1,4 @@
+.hero-envelope,.hero-letter,.hero-envelope__flap,.wax-seal,.hero__open,.rsvp-envelope__flap,.rsvp-envelope__letter,.rsvp-seal { will-change:transform,opacity }
+@media (prefers-reduced-motion: reduce) {
+  html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.scroll-cue{display:none}.image-frame img{transform:none!important}
+}

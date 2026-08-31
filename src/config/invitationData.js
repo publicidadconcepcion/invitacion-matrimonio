@@ -1,8 +1,10 @@
+const publicAsset = (path) => `${import.meta.env.BASE_URL}${path}`
+
 export const invitationData = {
   couple: {
     names: 'Sofía & Mateo',
     shortPhrase: 'El amor nos trajo hasta aquí',
-    heroImage: 'public/images/lovely-couple-have-warm-cuddle.jpg',
+    heroImage: publicAsset('images/lovely-couple-have-warm-cuddle.jpg'),
   },
   event: {
     date: '2027-03-20T17:00:00-03:00',
@@ -15,8 +17,8 @@ export const invitationData = {
   music: {
     title: 'Nuestra canción',
     artist: 'Sofía & Mateo',
-    file: 'public/music/Hoja en Blanco - Monchy y Alexandra.mp3',
-    cover: 'public/images/lovely-couple-have-warm-cuddle.jpg',
+    file: publicAsset('music/Hoja en Blanco - Monchy y Alexandra.mp3'),
+    cover: publicAsset('images/lovely-couple-have-warm-cuddle.jpg'),
   },
   loveMessage: [
     'Hay encuentros que cambian el rumbo de una vida.',
@@ -24,8 +26,8 @@ export const invitationData = {
     'Queremos celebrar este nuevo comienzo contigo.',
   ],
   photos: {
-    first: { src: 'public/images/lovely-couple-have-warm-cuddle.jpg', alt: 'Sofía y Mateo compartiendo un momento juntos' },
-    second: { src: 'public/images/lovely-couple-have-warm-cuddle.jpg', alt: 'Sofía y Mateo celebrando su historia', caption: 'Para siempre comienza aquí.' },
+    first: { src: publicAsset('images/lovely-couple-have-warm-cuddle.jpg'), alt: 'Sofía y Mateo compartiendo un momento juntos' },
+    second: { src: publicAsset('images/lovely-couple-have-warm-cuddle.jpg'), alt: 'Sofía y Mateo celebrando su historia', caption: 'Para siempre comienza aquí.' },
   },
   itinerary: [
     { time: '17:00', title: 'Ceremonia', description: 'El momento de decir sí.', icon: 'rings' },

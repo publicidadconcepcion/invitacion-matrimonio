@@ -1,4 +1,4 @@
-export const COMPANION_TYPES = ['Familiar', 'Amigo/a', 'Pareja', 'Compañero/a de trabajo', 'Otro']
+export const COMPANION_TYPES = ['Familiar', 'Amigo/a', 'Compañero/a de trabajo', 'Otro']
 
 export function validateRsvp(values) {
   const payload = {

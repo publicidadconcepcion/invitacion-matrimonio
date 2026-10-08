@@ -1,28 +1,14 @@
-import { escapeHtml, imageWithFallback } from './shared.js'
+import { escapeHtml } from './shared.js'
 
 export function heroEnvelope(data) {
-  return `<header class="hero invitation-section" data-hero>
-    <div class="hero__ambient" aria-hidden="true"></div>
-    <p class="hero__eyebrow">Tenemos algo que celebrar</p>
-    <div class="hero__scene">
-      <div class="hero-envelope" data-hero-envelope>
-        <div class="hero-envelope__back" aria-hidden="true"></div>
-        <article class="hero-letter" data-hero-letter>
-          ${imageWithFallback({ src: data.couple.heroImage, alt: `Fotografía de ${data.couple.names}`, className: 'hero-letter__photo', eager: true })}
-          <div class="hero-letter__caption"><span>Nuestra boda</span><strong>${escapeHtml(data.couple.names)}</strong></div>
-        </article>
-        <div class="hero-envelope__flap" data-hero-flap aria-hidden="true"></div>
-        <div class="hero-envelope__front" aria-hidden="true"><i></i><b></b><em></em></div>
-        <div class="hero-envelope__address">
-          <strong>${escapeHtml(data.couple.names)}</strong>
-          <span>${escapeHtml(data.couple.shortPhrase)}</span>
-        </div>
-        <div class="wax-seal" data-hero-seal aria-hidden="true"><span>S·M</span></div>
-      </div>
+  const cover = data.editorial
+  return `<header class="editorial-cover" data-hero aria-label="Portada de la invitación de ${escapeHtml(data.couple.names)}" style="--cover-ratio:${cover.coverWidth / cover.coverHeight};--seal-x:${cover.seal.x}%;--seal-y:${cover.seal.y}%">
+    <img class="editorial-cover__ambient" src="${escapeHtml(cover.cover)}" alt="" aria-hidden="true" decoding="async">
+    <div class="editorial-cover__frame" data-cover-frame>
+      <img class="editorial-cover__image" src="${escapeHtml(cover.cover)}" width="${cover.coverWidth}" height="${cover.coverHeight}" alt="Portada de periódico con los nombres de Lucía y Gerald, flores secas y un sobre negro con sello dorado" fetchpriority="high" decoding="async">
+      <button class="editorial-cover__seal" type="button" data-open-hero aria-label="Abrir invitación de ${escapeHtml(data.couple.names)}" aria-describedby="cover-hint"></button>
+      <p class="editorial-cover__hint" id="cover-hint" data-cover-hint>${escapeHtml(cover.openHint)}</p>
     </div>
-    <button class="hero__open" type="button" data-open-hero aria-label="Abrir invitación de ${escapeHtml(data.couple.names)}">
-      <span>Abrir invitación</span><i aria-hidden="true"></i>
-    </button>
-    <div class="scroll-cue" data-scroll-cue aria-hidden="true"><span>Desliza para continuar</span><i></i></div>
+    <div class="editorial-cover__vignette" data-cover-vignette aria-hidden="true"></div>
   </header>`
 }

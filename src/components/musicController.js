@@ -10,8 +10,11 @@ export function initMusicPlayer(root = document) {
   const duration = player.querySelector('[data-audio-duration]')
   const status = player.querySelector('[data-audio-status]')
 
+  if (!audio.hasAttribute('src')) return () => {}
+
   const setUnavailable = () => {
-    status.textContent = 'Agrega la canción en public/music/love-song.mp3'
+    status.textContent = 'La canción no está disponible en este momento.'
+    progress.disabled = true
     toggle.disabled = true
     player.classList.add('is-unavailable')
   }

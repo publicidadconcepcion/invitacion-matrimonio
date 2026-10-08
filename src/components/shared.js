@@ -1,3 +1,5 @@
+import { invitationData } from '../config/invitationData.js'
+
 export const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (character) => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;',
 }[character]))
@@ -5,7 +7,7 @@ export const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (cha
 export function imageWithFallback({ src, alt, className = '', eager = false }) {
   return `<div class="image-frame ${className}" data-image-frame>
     <img src="${escapeHtml(src)}" alt="${escapeHtml(alt)}" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" data-fallback-image>
-    <div class="image-fallback" aria-hidden="true"><span>SM</span><small>Tu fotografía aquí</small></div>
+    <div class="image-fallback" aria-hidden="true"><span>${escapeHtml(invitationData.couple.initials)}</span><small>Tu fotografía aquí</small></div>
   </div>`
 }
 

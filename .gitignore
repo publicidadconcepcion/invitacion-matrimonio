@@ -22,3 +22,14 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Private invitation source and generated links
+data/
+.env
+.env.*
+*.pem
+*.key
+*.p12
+credentials*.json
+service-account*.json
+__pycache__/

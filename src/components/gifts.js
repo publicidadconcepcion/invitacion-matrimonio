@@ -1,5 +1,6 @@
 import { escapeHtml } from './shared.js'
 import { giftIcon } from './giftIcons.js'
+import { giftTransfer } from './giftTransfer.js'
 
 export function gifts(data) {
   return `<section class="gifts invitation-section section-shell" aria-labelledby="gifts-title" data-reveal-section>
@@ -9,5 +10,6 @@ export function gifts(data) {
       <strong class="gift-option__amount">${escapeHtml(option.amount)}</strong>
       <h3>${escapeHtml(option.title)}</h3><p>${escapeHtml(option.detail)}</p>
     </article>`).join('')}</div>
+    ${giftTransfer()}
   </section>`
 }

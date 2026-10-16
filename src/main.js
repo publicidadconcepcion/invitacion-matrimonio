@@ -9,9 +9,11 @@ import './styles/responsive.css'
 import './styles/animations.css'
 import './styles/editorial.css'
 import './styles/editorial-interior.css'
+import './styles/gift-transfer.css'
 
 import { invitationData } from './config/invitationData.js'
 import { invitationApp } from './components/app.js'
+import { initGiftTransfer } from './components/giftTransfer.js'
 import { initImageFallbacks } from './components/shared.js'
 import { initMusicPlayer } from './components/musicController.js'
 import { initCountdown } from './components/countdownController.js'
@@ -24,14 +26,12 @@ import { initSongForm } from './components/songController.js'
 
 import { initGuestPersonalization } from './components/guestPersonalization.js'
 
-import { initGallery } from './components/galleryController.js'
-
 const data = invitationData
 const app = document.querySelector('#app')
 app.innerHTML = invitationApp(data)
 
 initImageFallbacks(app)
-initGallery(app)
+initGiftTransfer(app)
 initMusicPlayer(app)
 initCountdown(app, data.event.date)
 initRsvpForm(app, data.rsvp)

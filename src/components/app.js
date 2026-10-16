@@ -2,7 +2,6 @@ import { heroEnvelope } from './heroEnvelope.js'
 import { photoBackdrop, editorialWelcome } from './editorial.js'
 import { musicPlayer } from './musicPlayer.js'
 import { loveMessage } from './loveMessage.js'
-import { gallery } from './gallery.js'
 import { breakingNews } from './breakingNews.js'
 import { eventDate } from './eventDate.js'
 import { countdown } from './countdown.js'
@@ -29,7 +28,6 @@ export function invitationApp(data) {
       ${countdown()}
       ${breakingNews(data.editorial.breaking)}
       ${itinerary(data.itinerary, data.event)}
-      ${gallery(data.gallery)}
       ${breakingNews(data.editorial.breaking)}
       ${dressCode(data.dressCode)}
       ${spotifySection(data.spotify)}

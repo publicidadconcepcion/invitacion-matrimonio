@@ -23,7 +23,7 @@ export function initScrollAnimations(root = document) {
       .from(['.music-player__track', '.music-player__times'], { y: 12, autoAlpha: 0, duration: .55, stagger: .08, ease: 'power2.out' }, '-=.3')
       .from('.music-player__controls', { y: 14, autoAlpha: 0, duration: .6, ease: 'power2.out' }, '-=.2')
     gsap.from('[data-love-line]', { y: 30, autoAlpha: 0, duration: 1.1, stagger: .28, ease: 'power2.out', scrollTrigger: { trigger: '.love-message', start: 'top 72%', once: true } })
-    gsap.utils.toArray('[data-breaking], [data-event-card], [data-gallery]').forEach((element) => {
+    gsap.utils.toArray('[data-breaking], [data-event-card]').forEach((element) => {
       gsap.from(element, { y: 22, autoAlpha: 0, duration: .85, ease: 'power2.out', scrollTrigger: { trigger: element, start: 'top 88%', once: true } })
     })
     const heartBeat = gsap.timeline({ paused: true, repeat: -1, repeatDelay: 1.4 })

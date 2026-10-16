@@ -48,12 +48,6 @@ export const invitationData = {
     'La vida quiso que, después de tantos años y tantos caminos, volviéramos a encontrarnos.',
     'Hoy queremos decirnos que sí, y seguir eligiéndonos, una y otra vez.',
   ],
-  gallery: {
-    title: 'Retratos de nuestro amor',
-    subtitle: 'Cada momento nos trajo hasta aquí.',
-    caption: 'Para siempre comienza aquí.',
-    photos: Array.from({ length: 3 }, () => ({ src: photo, alt: 'Lucía y Gerald celebrando su historia' })),
-  },
   itinerary: [
     { time: '20:00 hrs', title: 'Ceremonia', description: 'El momento en que diremos que sí.', icon: 'rings' },
     { time: '20:45 a 23:00 hrs', title: 'Cóctel extendido', description: 'Un espacio para compartir, conversar y comenzar la celebración.', icon: 'glass' },

@@ -1,0 +1,21 @@
+.gift-transfer { margin-top: clamp(28px, 7vw, 44px); padding-top: 28px; border-top: 1px solid var(--editorial-gold); min-width: 0; }
+.gift-transfer__ornament { display: block; color: var(--editorial-gold); font-size: 1.15rem; }
+.gift-transfer h3 { margin: 12px 0; font-family: var(--font-display); font-size: clamp(1.6rem, 6vw, 2rem); font-weight: 400; }
+.gift-transfer__intro { max-width: 44ch; margin: 0 auto 24px; color: var(--color-muted); font-size: .85rem; line-height: 1.7; }
+.gift-transfer__details { margin: 0 0 24px; text-align: left; }
+.gift-transfer__row { display: grid; grid-template-columns: minmax(0, 1fr) 44px; gap: 10px; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--color-line); }
+.gift-transfer__text { min-width: 0; }
+.gift-transfer dt { margin-bottom: 5px; color: var(--color-muted); font-size: .72rem; }
+.gift-transfer dd { margin: 0; color: var(--color-text); font-size: .9rem; line-height: 1.6; overflow-wrap: anywhere; user-select: text; }
+.gift-transfer dd a { text-decoration-color: var(--editorial-gold); text-underline-offset: 3px; }
+.gift-transfer__copy { display: grid; place-items: center; width: 44px; height: 44px; padding: 10px; border: 0; border-radius: 3px; color: var(--color-text); background: transparent; cursor: pointer; touch-action: manipulation; }
+.gift-transfer svg { flex: 0 0 18px; width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+.gift-transfer__all { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; min-height: 48px; padding: 12px; border: 1px solid var(--editorial-gold); border-radius: 3px; background: transparent; color: var(--color-text); font-size: .8rem; line-height: 1.5; cursor: pointer; touch-action: manipulation; }
+.gift-transfer__all span { min-width: 0; overflow-wrap: anywhere; }
+.gift-transfer__copy:hover, .gift-transfer__all:hover { background: #BEA77A18; }
+.gift-transfer button:focus-visible { outline: 2px solid var(--editorial-gold); outline-offset: 3px; }
+.gift-transfer button[aria-busy="true"] { opacity: .6; cursor: wait; }
+.gift-transfer__status { min-height: 2.8em; margin: 10px 0 16px; font-size: .75rem; line-height: 1.4; overflow-wrap: anywhere; }
+.gift-transfer__closing { text-align: center; }
+.gift-transfer__closing p { margin: 0 0 10px; font-size: .78rem; line-height: 1.6; }
+.gift-transfer__closing p + p { font-family: var(--font-display); font-size: 1.5rem; }

@@ -62,21 +62,3 @@
 .event-card__venue p { margin: 1rem 0 1.5rem; color: #777777; }
 .event-card--2 { border-top: 3px solid #BEA77A; }
 .event-card--3 { border-bottom: 3px solid #BEA77A; }
-
-.gallery { margin: 80px auto; max-width: 1100px; overflow: clip; }
-.gallery__heading { width: min(calc(100% - 32px),680px); margin: 0 auto 28px; padding: 32px 24px; background: #FAFAF8; text-align: center; }
-.gallery__heading svg { width: 32px; height: 32px; margin: 0 auto 18px; fill: none; stroke: #111111; stroke-width: 1.1; }
-.gallery__heading p { font-size: .9rem; line-height: 1.6; color: #777777; margin-bottom: 0; }
-.gallery__track { --slide-width: min(76vw, 440px); display: flex; gap: 16px; overflow-x: auto; padding: 16px calc((100% - var(--slide-width)) / 2); scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain; }
-.gallery__track::-webkit-scrollbar { display: none; }
-.gallery__slide { flex: 0 0 var(--slide-width); width: var(--slide-width); min-width: 0; margin: 0; padding: 10px 10px 18px; background: #FFFFFF; box-shadow: 0 8px 20px rgba(0,0,0,.18); scroll-snap-align: center; }
-.gallery__photo { aspect-ratio: 3/4; background: #FAFAF8; }
-.gallery__photo img { object-fit: contain; }
-.gallery__slide figcaption { margin-top: 14px; text-align: center; font-family: var(--font-display); font-size: .85rem; }
-.gallery__controls { display: flex; align-items: center; justify-content: center; gap: 16px; width: fit-content; max-width: calc(100% - 32px); margin: 18px auto 0; padding: 6px 12px; background: #FFFFFF; }
-.gallery__controls button { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 0; background: transparent; color: #111111; cursor: pointer; }
-.gallery__controls button:disabled { color: #D9D9D9; cursor: default; }
-.gallery__dots { display: flex; flex-wrap: wrap; justify-content: center; }
-.gallery__dots span { width: 7px; height: 7px; border-radius: 50%; background: #D9D9D9; }
-.gallery__dots [aria-current] span { background: #111111; }
-@media (prefers-reduced-motion: reduce) { .gallery__track { scroll-behavior: auto; } }

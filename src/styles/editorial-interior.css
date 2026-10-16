@@ -21,7 +21,7 @@
 .form-field input, .form-field select, .form-field textarea { min-height: 44px; }
 .radio-group input:focus-visible + span { outline: 2px solid #111111; outline-offset: 3px; }
 .rsvp-seal { border: 1px solid #BEA77A; }
-.gift-option__amount, .guest-info li > span { color: #111111; }
+.guest-info li > span { color: #111111; }
 .music-player__track:disabled { opacity: .5; cursor: default; }
 
 /* The source contains transparent margins: overlap its transparent sides only. */

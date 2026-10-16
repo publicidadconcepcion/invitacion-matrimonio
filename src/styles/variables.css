@@ -2,6 +2,7 @@
   --editorial-ink: #111111;
   --editorial-paper: #FAFAF8;
   --editorial-gold: #BEA77A;
+  --editorial-photo-filter: grayscale(85%) sepia(72%) saturate(100%) contrast(105%) brightness(104%);
   --editorial-rule: #D9D9D9;
   --editorial-shadow: 0 18px 60px rgba(0, 0, 0, .16);
   --color-background: #FAFAF8;

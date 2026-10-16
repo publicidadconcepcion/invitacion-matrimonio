@@ -22,8 +22,8 @@
 .gift-option { display: grid; grid-template-columns: 2rem minmax(0,1fr); column-gap: .8rem; padding: 1.5rem .25rem; border-bottom: 1px solid var(--color-line); }
 .gift-option__icon { grid-column: 1; grid-row: 1 / 4; display: grid; place-items: start center; width: 2rem; color: #BEA77A; }
 .gift-option__icon svg { display: block; width: 22px; height: 22px; fill: currentColor; }
-.gift-option__amount { grid-column: 2; color: var(--color-accent); font-size: .9rem; letter-spacing: .04em; overflow-wrap: anywhere; }
-.gift-option h3 { grid-column: 2; margin: .45rem 0; font-family: var(--font-display); font-weight: 400; font-size: 1.35rem; }
+.gift-option__amount { grid-column: 2; margin-top: .7rem; color: var(--color-text); font-size: .9rem; font-weight: 600; letter-spacing: .02em; overflow-wrap: anywhere; }
+.gift-option h3 { grid-column: 2; margin: 0 0 .45rem; font-family: var(--font-display); font-weight: 400; font-size: 1.35rem; }
 .gift-option p { grid-column: 2; margin: 0; color: var(--color-muted); font-size: .85rem; line-height: 1.65; }
 .spotify .section-heading > p { max-width: 40ch; margin: 0 auto 1.75rem; line-height: 1.7; }
 .spotify__pending { color: var(--color-muted); font-size: .85rem; }

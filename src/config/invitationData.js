@@ -86,11 +86,11 @@ export const invitationData = {
   ],
   personalization: {
     enabled: true,
-    endpoint: 'https://script.google.com/macros/s/AKfycbwHAwfP2T4ubdnf32flxOrtRVS0IdR6fIZdzuIOy2HCGSnJrrsd0ZWukgfSYvNeamG7Mg/exec',
+    endpoint: 'https://script.google.com/macros/s/AKfycbytldZy6-AClSNe-C2nqeIj6QpuwhiN308Frr9qCcAjVFn_bwmtloQgmepbreDnAov8yA/exec',
     prefix: 'UNA INVITACIÓN ESPECIAL PARA',
   },
   rsvp: {
-    endpoint: 'https://script.google.com/macros/s/AKfycbwHAwfP2T4ubdnf32flxOrtRVS0IdR6fIZdzuIOy2HCGSnJrrsd0ZWukgfSYvNeamG7Mg/exec',
+    endpoint: 'https://script.google.com/macros/s/AKfycbytldZy6-AClSNe-C2nqeIj6QpuwhiN308Frr9qCcAjVFn_bwmtloQgmepbreDnAov8yA/exec',
   },
   sharedPhotos: {
     // Regenerate src/assets/shared-album-qr.svg whenever this URL changes.

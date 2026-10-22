@@ -93,8 +93,8 @@ export const invitationData = {
     endpoint: 'https://script.google.com/macros/s/AKfycbytldZy6-AClSNe-C2nqeIj6QpuwhiN308Frr9qCcAjVFn_bwmtloQgmepbreDnAov8yA/exec',
   },
   sharedPhotos: {
-    // Regenerate src/assets/shared-album-qr.svg whenever this URL changes.
-    url: 'https://photos.app.goo.gl/EtKzFJ39VLXDR3Lv9',
+    // Keep public/images/QR_Fotos_Lucia_Gerald.png in sync with this URL.
+    url: 'https://photos.app.goo.gl/Y78jH3XUBonXVeQp6',
   },
   whatsapp: {
     phone: '',

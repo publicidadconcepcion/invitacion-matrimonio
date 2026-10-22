@@ -1,5 +1,5 @@
 import { escapeHtml } from './shared.js'
-import albumQr from '../assets/shared-album-qr.svg'
+const albumQr = `${import.meta.env.BASE_URL}images/QR_Fotos_Lucia_Gerald.png`
 
 export function sharedPhotos(data) {
   return `<section class="shared-photos invitation-section section-shell" aria-labelledby="shared-photos-title" data-shared-photos>
